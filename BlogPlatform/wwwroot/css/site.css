@@ -1,0 +1,45 @@
+﻿:root {
+    --main-color: #001636;
+    --old-color: #36465d;
+    --post-background: #ffffff;
+    --text-color: #000000;
+    --text-color-accent: #444444;
+    --main-font: 'Roboto';
+    --header-font: 'Roboto Slab';
+}
+
+body {
+    background-color: var(--main-color);
+    font-family: var(--main-font), sans-serif;
+    font-size: 14px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--main-color);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.5em;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background-color: var(--old-color);
+}
+
+nav a:visited{
+    color: #ffffff;
+}

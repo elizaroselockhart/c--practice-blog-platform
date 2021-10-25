@@ -1,0 +1,38 @@
+﻿@model IEnumerable<BlogPlatform.Models.Post>
+
+@{
+    ViewData["Title"] = "tumblr 2";
+}
+
+@section Styles{
+    <link rel="stylesheet" href="~/css/Views/Post/PostIndex.css" />
+}
+
+<body>
+    @foreach (var item in Model)
+    {
+        <article id="post">
+            <h2 id="postTitle">
+                @item.Title
+            </h2>
+            <p id="postBody">
+                @item.Body
+            </p>
+            <p id="postAuthor">
+                Author: @item.Author
+            </p>
+            <p id="postDate">
+                Publish Date: @item.PublishDate.ToString("M/d/yyyy, H:mm")
+            </p>
+            <p id="actions">
+                <a asp-action="Edit"> Edit </a>
+                <a asp-action="Delete"> Delete </a>
+            </p>
+        </article>
+    }
+</body>
+
+<nav>
+    <a asp-action="Create">Create Post</a>
+    <a asp-action="Index">All Posts</a>
+</nav>

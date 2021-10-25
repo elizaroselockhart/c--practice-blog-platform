@@ -1,0 +1,42 @@
+﻿html {
+    margin-top: 3em;
+}
+
+body article {
+    background-color: white;
+    padding: 1em;
+    margin: 1em;
+    border-radius: .5em;
+}
+
+body article #postAuthor {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+body article #postDate {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+body article #actions {
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+body article #actions a {
+    color: black;
+    text-decoration: none;
+    padding: .5rem;
+}
+
+body article #actions a:hover {
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 5px;
+}
+
+body article #actions a:visited {
+    color: black;
+}
